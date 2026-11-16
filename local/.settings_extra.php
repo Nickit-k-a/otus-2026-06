@@ -39,22 +39,6 @@ return array (
     ),
     'readonly' => false,
   ),
-  'connections' => 
-  array (
-    'value' => 
-    array (
-      'default' => 
-      array (
-        'host' => 'mysql',
-        'database' => 'dev',
-        'login' => 'dev',
-        'password' => 'dev',
-        'options' => 2.0,
-        'className' => '\\Bitrix\\Main\\DB\\MysqliConnection',
-      ),
-    ),
-    'readonly' => true,
-  ),
   'crypto' => 
   array (
     'value' => 
