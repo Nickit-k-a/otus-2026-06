@@ -84,3 +84,15 @@
 /vote-result/
 /welcome/
 /workgroups/
+# секреты и локальные настройки
+/.env
+
+# собственные логи — не нужны в репозитории
+/local/logs/
+
+# служебные файлы IDE/ОС
+/.idea/
+/.vscode/
+.DS_Store
+Thumbs.db
+/__bx_log.log
