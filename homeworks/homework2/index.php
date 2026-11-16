@@ -13,14 +13,11 @@ Asset::getInstance()->addCss('//cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bo
 
     <h4 class="mb-3">Пояснительная записка</h4>
     <div style="color: red;font-style: italic;">
-        Тут добавить описание того что и как было реализовано.
+        Были реализованы дополнительные функции логирования(запись в файл даты и времени) и чистки лога, переопределена функция записи exception в лог файла, вызывается из .settings_extra. 
     </div>
     <br>
     <br>
     <hr>
-    <div style="color: red;font-style: italic;">
-        &darr;&darr;&darr; ссылки ниже заменить на свои &darr;&darr;&darr;
-    </div>
 
     <div class="card shadow-sm mt-4">
         <div class="card-header bg-success text-white">
@@ -28,29 +25,30 @@ Asset::getInstance()->addCss('//cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bo
         </div>
         <ul class="list-group list-group-flush">
             <li class="list-group-item list-group-item-action">
-                <a href="/bitrix/admin/fileman_file_view.php?path=/local/App/Debug/Log.php"
-                   class="d-flex justify-content-between align-items-center">
-                <span>
-                    local/logs/log_custom.log
-                </span>
+                <a href="/homeworks/homework2/view_log.php"
+                target="_blank"
+                class="d-flex justify-content-between align-items-center">
+                    <span>
+                        local/logs/log_custom.log
+                    </span>
                     <span class="badge bg-success">
-                    Файл лога из п1 ДЗ
-                </span>
+                        Файл лога из п1 ДЗ
+                    </span>
                 </a>
             </li>
             <li class="list-group-item list-group-item-action">
-                <a href="/bitrix/admin/fileman_file_view.php?path=/local/App/Debug/Log.php"
-                   class="d-flex justify-content-between align-items-center">
-                <span>
-                    writelog.php
-                </span>
+                <a href="/homeworks/homework2/writelog.php"
+                class="d-flex justify-content-between align-items-center">
+                    <span>
+                        writelog.php
+                    </span>
                     <span class="badge bg-secondary">
-                    Добавление в лог из п1 ДЗ
-                </span>
+                        Добавление в лог из п1 ДЗ
+                    </span>
                 </a>
             </li>
             <li class="list-group-item list-group-item-action">
-                <a href="/bitrix/admin/fileman_file_view.php?path=/local/App/Debug/Log.php"
+                <a href="/homeworks/homework2/clearlog.php"
                    class="d-flex justify-content-between align-items-center">
                 <span>
                     clearlog.php
@@ -81,7 +79,7 @@ Asset::getInstance()->addCss('//cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bo
         </div>
         <ul class="list-group list-group-flush">
             <li class="list-group-item list-group-item-action">
-                <a href="/bitrix/admin/fileman_file_view.php?path=/local/App/Debug/Log.php"
+                <a href="/homeworks/homework2/view_exception.php"
                    class="d-flex justify-content-between align-items-center">
                 <span>
                     local/logs/exceptions.log
@@ -92,7 +90,7 @@ Asset::getInstance()->addCss('//cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bo
                 </a>
             </li>
             <li class="list-group-item list-group-item-action">
-                <a href="/bitrix/admin/fileman_file_view.php?path=/local/App/Debug/Log.php"
+                <a href="/homeworks/homework2/writeexception.php"
                    class="d-flex justify-content-between align-items-center">
                 <span>
                     writeexception.php
@@ -103,7 +101,7 @@ Asset::getInstance()->addCss('//cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bo
                 </a>
             </li>
             <li class="list-group-item list-group-item-action">
-                <a href="/bitrix/admin/fileman_file_view.php?path=/local/App/Debug/Log.php"
+                <a href="/homeworks/homework2/clearexception.php"
                    class="d-flex justify-content-between align-items-center">
                 <span>
                     clearexception.php
