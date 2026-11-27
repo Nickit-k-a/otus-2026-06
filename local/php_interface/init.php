@@ -1,4 +1,5 @@
 <?php
+use Bitrix\Main\EventManager;
 
 require_once __DIR__ . '/../../vendor/autoload.php';
 
@@ -12,3 +13,15 @@ function pr($var, $type = false) {
         print_r($var);
     echo '</pre>';
 }
+
+AddEventHandler("iblock", "OnBeforeIBlockElementAdd", function (&$arFields) {
+    // 18 — ID вашего инфоблока "Доктор" (видно в URL на прошлом скриншоте)
+    if ((int)$arFields["IBLOCK_ID"] === 18 && empty($arFields["CODE"]) && !empty($arFields["NAME"])) {
+        $arFields["CODE"] = CUtil::translit($arFields["NAME"], "ru", [
+            "replace_space" => "-",
+            "replace_other" => "-"
+        ]);
+    }
+});
+
+
