@@ -4,7 +4,8 @@
     },
     "autoload": {
         "psr-4": {
-            "Otus\\": "local/php_interface/src"
+            "Otus\\": "local/php_interface/src",
+            "App\\": "local/App/"
         }
     }
 }
